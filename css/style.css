@@ -54,12 +54,19 @@ h2 {
 
 
 }
+.classname {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  }
 @keyframes spin {
     30% {
-        transform: rotate(0.5turn);
+        transform: rotate(90deg);
     }
     80%{
-        transform: rotate(2.0turn);
+        transform: rotate(180deg);
     }
 }
 .portrait {
