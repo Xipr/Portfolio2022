@@ -1,0 +1,171 @@
+* {
+    text-align: center;
+    Font-Family: 'Droid Serif', Serif;
+    Font-Size: 15px;
+    box-sizing: border-box;
+}
+ /* Font-Family: 'Roboto', Sans-Serif;
+    Font-Size: 35px;
+    Font-Family: 'Droid Serif', Serif;
+    Font-Size: 15px;
+/* :root {
+    // Like 1
+    --midnight-dreams: #0c2231;
+    --carousel-pink: #f9dce1;
+    --blackcurrant: #2d1832;
+    --wild-pansy: #6373b6;
+} */
+/* body */
+body {
+    background-color: #E4586E;
+    color:#FCF8EE;
+}
+h2 {
+    Font-Family: 'Roboto', Sans-Serif;
+    Font-Size: 35px;
+    font-weight: bold;
+
+}
+/* About me */
+.frontpage{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../extras/photos/headerbackground.gif");
+    background-repeat: repeat;
+    background-size: 400px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.backgroundimage {
+    z-index: -1;
+}
+
+.imagewithname {
+    padding: 25%;
+    padding-top: 75%;
+    color: white;
+    z-index: 1;
+    align: center
+
+
+}
+@keyframes spin {
+    30% {
+        transform: rotate(0.5turn);
+    }
+    80%{
+        transform: rotate(2.0turn);
+    }
+}
+.portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navwrap {
+ 
+    text-align: left;
+    background-color: #BF223C;
+    width: 100%;  
+    -ms-text-size-adjust: auto;
+}
+
+nav a {
+    margin: 10px;
+    Font-Family: 'Roboto', Sans-Serif;
+    Font-Size: 35px;
+}
+
+/* projects */
+#portfolio {
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    width: ;
+}
+/* parent grid */
+.portfoliobox {
+    max-height: 2000px;
+    width: 100%;
+    overflow:auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    padding: 10px; /* allows padding inbetween boxes in combination with margin below*/
+    z-index: -1;
+    
+
+}
+/* child grid */
+#projectsection {
+    height: 100vh;
+}
+.box {
+    background-color: #BF223C;
+    border-radius: 30%;
+    border: 2px #F5BE5C solid;;
+    height: 300px;
+    width: auto;
+    margin: 10px; /*allows the gap between boxes in combination with padding above*/
+}
+.box:hover {
+    background-color:#F5BE5C;
+    transition: background-color 200ms linear 100ms;
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.projectboxes {
+    height: 300px;
+    width: auto;
+}
+
+
+
+
+
+/* media queries */
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .box ,.projectboxes, .photos {
+        height: 200px;
+        width: 200px;
+        justify-content:center;
+    } 
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .portfoliobox {
+
+        justify-content:center;
+        align-content: center;
+    } 
+}
+/* @media screen and (max-width: 1024px) {
+    #projectsection {
+        float: top;
+    }
+} */
+
+
+
